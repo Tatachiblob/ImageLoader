@@ -34,7 +34,7 @@ public class NetworkUtils {
             return null;
         String jsonResponse = "";
 
-        URL url = createURL("https://api.themoviedb.org/3/search/movie?api_key=07d9adcc57400a9e0037f806286a7c3c&language=en-US&query=a&page=1&include_adult=false");
+        URL url = createURL("https://api.themoviedb.org/3/search/movie?api_key=07d9adcc57400a9e0037f806286a7c3c&language=en-US&query=Star%20Wars&page=1&include_adult=false");
 
         HttpURLConnection conn = null;
         InputStream inputStream = null;

@@ -36,7 +36,7 @@ public class FilmTaskLoader extends AsyncTaskLoader<ArrayList<Movie>> {
     @Override
     public ArrayList<Movie> loadInBackground() {
         ArrayList<Movie> movies = new ArrayList<>();
-        String filmSearchJson = NetworkUtils.httpGetRequestToAny("Resident Evil");
+        String filmSearchJson = NetworkUtils.httpGetRequestToAny("Star Wars");
 
         if(!TextUtils.isEmpty(filmSearchJson)){
             try{

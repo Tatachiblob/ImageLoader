@@ -45,12 +45,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         filmSearchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String query = filmSearchText.getText().toString();
-                if(!TextUtils.isEmpty(query)){
+                String query = "Star Wars";
                     Bundle queryBundle = new Bundle();
                     queryBundle.putString("queryString", query);
                     getSupportLoaderManager().restartLoader(0, queryBundle, MainActivity.this);
-                }
             }
         });
 
